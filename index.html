@@ -12,25 +12,25 @@
     <div class="container">
         <div class="container-input">
             <h1>GUESS THE NUMBER (1 - 100)</h1>
-            <form action="">
-                <input type="text">
-                <input type="submit" value="CHECK">
+            <form class="form-guess" action="">
+                <input class="input-guess" type="number">
+                <input class="submit-btn" type="submit" value="CHECK">
             </form>
         </div>
         <div class="container-hearts">
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-heart"></i>
+            <!-- <button class="again-btn">TRY AGAIN</button> -->
         </div>
         <div class="container-text">
-            <h1 class="try-again">TRY AGAIN!</h1>
-            <h1 class="congratulation">CONGRATULATIONS!</h1>
-            <p class="entered-number">Entered number is: </p>
-            <p class="comment">Enter a smaller number</p>
+            <div class="container-feedback">
+                <h1 class="feedback-text"></h1>
+            </div>
+            <p class="last-guess"></p>
+            <div class="container-comment">
+                <i class="fa-solid fa-arrow-up disabled"></i>
+                <i class="fa-solid fa-arrow-down disabled"></i>
+                <p class="comment"></p>
+            </div>
         </div>
-    
     </div>
 
 

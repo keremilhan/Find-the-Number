@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 body {
@@ -10,4 +10,137 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: #788F95;
 }
+
+
+.container {
+    height: 60vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #B8BBC0;
+    border-radius: 30px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.container-input h1 {
+    margin-bottom: 2rem;
+    font-size: 4rem;
+}
+
+.input-guess {
+    min-width: 10vw;
+    height: 30px;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid;
+    padding-left: 0.5rem;
+}
+
+.input-guess:focus {
+    outline: none;
+}
+
+.submit-btn {
+    height: 34px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 70px;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    font-weight: 700;
+}
+
+.submit-btn:hover {
+    background-color:#788F95;
+    color: white;
+}
+
+.container-hearts i {
+    font-size: 3rem;
+    color: red;
+}
+
+.comment {
+    font-size:3rem;
+    margin-left: 2rem;
+    width: 40%;
+}
+
+.container-comment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+}
+
+.container-comment i {
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+
+.last-guess {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    height: 5rem;
+}
+
+.container-feedback {
+    height: 6rem;
+    margin-bottom: 1rem;
+}
+
+.feedback-text{
+    font-size:4rem;
+}
+
+.disabled {
+    color: white;
+}
+
+.enabled {
+    color: black;
+}
+
+.again-btn {
+    height: 34px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    font-weight: 700;
+    color: black;
+}
+
+.again-btn:hover {
+    background-color:#788F95;
+    color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    html {
+        font-size: 10px;
+    }
+
+    .comment {
+        width: 55%;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    html {
+        font-size: 5px;
+    }
+}
+
+
