@@ -19,11 +19,11 @@ body {
 
 
 .container {
-    height: 40vh;
+    height: 55%;
     width: 40vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: center;
     background-color: #B8BBC0;
     border-radius: 30px;
@@ -37,8 +37,8 @@ body {
 }
 
 .input-guess {
-    min-width: 10vw;
-    height: 40px;
+    min-width: 40%;
+    height: 3.5rem;
     outline: none;
     border-radius: 10px;
     border: 2px solid;
@@ -50,11 +50,11 @@ body {
 }
 
 .submit-btn {
-    height: 40px;
+    height: 3.5rem;
     background-color: white;
     border: none;
     border-radius: 10px;
-    width: 70px;
+    width: 6rem;
     cursor: pointer;
     margin-left: 0.5rem;
     font-weight: 700;
@@ -75,13 +75,14 @@ body {
     font-size:3rem;
     margin-left: 2rem;
     width: 40%;
+
 }
 
 .container-comment {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 5rem;
+    height: 35%;
 }
 
 .container-comment i {
@@ -96,7 +97,7 @@ body {
 }
 
 .container-feedback {
-    height: 6rem;
+    height: 40%;
     margin-bottom: 1rem;
 }
 
@@ -141,11 +142,37 @@ body {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
 
     html {
-        font-size: 4px;
+        font-size: 6px;
     }
+
+    .last-guess {
+        padding-top: 2rem;
+    }
+
+    .form-guess {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .input-guess {
+        height: 7rem;
+    }
+
+    .submit-btn {
+        width: 15rem;
+        height: 7rem;
+        margin-top: 1rem;
+    }
+
+    .container {
+        width: 60vw;
+        padding: 2rem;
+    }
+
 }
 
 
