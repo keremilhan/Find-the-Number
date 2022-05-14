@@ -35,7 +35,7 @@ let lifeCount = 5;
 form.addEventListener('submit', function(e){
     e.preventDefault();
     feedbackText.textContent = ``;
-    if(guess.value == 0 || guess.value > 100){  
+    if(guess.value <= 0 || guess.value > 100){  
         alert("The Number is between 1 and 100!");
     }
     else if(guess.value == randomNumber){
