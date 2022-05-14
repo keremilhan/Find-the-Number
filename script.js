@@ -49,6 +49,7 @@ form.addEventListener('submit', function(e){
         againBtn.textContent = 'TRY AGAIN'
         containerComment.appendChild(againBtn);
 
+        guess.setAttribute('disabled', 'disabled')
         againBtn.onclick = () => location.reload();
     }
     else if(guess.value > randomNumber){
@@ -88,7 +89,7 @@ function checkLife() {
         againBtn.textContent = 'TRY AGAIN'
         containerComment.appendChild(againBtn);
 
+        guess.setAttribute('disabled', 'disabled')
         againBtn.onclick = () => location.reload();
-
     }
 }
